@@ -188,7 +188,7 @@ exports.playCmd =(socket,  rl) => {
 	const playOne = () => {
 		return Sequelize.Promise.resolve()
 			.then(() => {
-		    if(toBeResolved.length <= 0){
+		    if(toBeResolved.length <=0){
 				log(socket, "No hay nada más que preguntar.\nFin del quiz. Aciertos: ${score} ");
 				biglog(socket, `${score}`, 'yellow');
 				return;
